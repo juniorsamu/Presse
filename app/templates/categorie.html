@@ -3,6 +3,11 @@
 {% block main %}
 
 {{ super ()}}
+
+<div id="videoBox">
+	<video id="video" src="{{url_for('static',filename='Images/vid.mp4')}}" autoplay loop muted></video>
+</div> 
+
 <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='Style/eng_article.css')}}">
 
 <main class="main">

@@ -76,21 +76,17 @@ def login():										#	(s'il s'est inscrit il accede à la page au cas echéant
 
 			if not user:
 				flash(" Ce mail n'a pas été enregistré")
-				print("ERROR MAIL NOT EXIST")
 				return redirect(url_for('login'))
 
 			pswd_unhashed = bcrypt.check_password_hash(user.mot_passe, password)
 
-			print("ERRRROR ",pswd_unhashed)
-
 			if not pswd_unhashed:
 				flash("Mot de passe saisie incorrect")
-				print("PASSWORD INCORRECT")
 				return redirect(url_for('login'))
 
 			login_user(user)
 			flash("Vous etes connecté")
-			return redirect(url_for('index'))
+			redirect(url_for('deb'))
 
 		return render_template('login.html', form = login_form)
 
@@ -112,7 +108,7 @@ def user():
 
 		db.session.add(user)
 		db.session.commit()
-		flash("Utilisateur enrégistré avec succes!!")
+		flash("Utilisateur enrégistré avec succesè!")
 
 
 	return render_template('user.html', form = user_form)
