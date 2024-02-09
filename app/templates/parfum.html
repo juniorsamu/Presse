@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+	{% block main %}
+	{{ super ()}}
+	<main class="main">
+
+	
+	<article class="article">
+	<img src="{{url_for('static',filename='Images/parf1.jpg')}}" class="article-img">
+	<h1 class="article-title"> GENTLMEN</h1>
+	<h4 class="article-date"> Poster le 22/07/2023</h4>
+	<p> Avancez vers l'inconnu</p>
+	<p></p>
+	<button>Ajouter au panier</button>
+	</article>
+	<hr>
+
+	
+	<article class="article">
+	<img src="{{url_for('static',filename='Images/parf3.jpg')}}" class="article-img">
+	<h1 class="article-title"> DROSERA</h1>
+	<h4 class="article-date"> Poster le 22/07/2023</h4>
+	<p> Pur parfum des rosea</p>
+	<p></p>
+	<button>Ajouter au panier</button>
+	</article>
+	<hr>
+	
+	</main>
+	{% endblock %}                                                                 
+ 

@@ -1,0 +1,47 @@
+<!-- {%extends 'base.html'%} -->
+<!-- {%block main%} -->
+{{super()}}
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='Style/login.css')}}">
+<form action="" method="POST">
+    {{form.hidden_tag()}}
+    
+        <body>
+            
+            <div class="login-form">
+            
+                    <h1>Se Connecter</h1>
+                    <p>
+                        <h3>
+                        Avez-vous déja un compte ? Connectez-vous ou 
+                        <a href="{{url_for('user')}}">Inscrivez-vous</a>
+                        </h3>
+                    </p>
+                <div class="input-box">
+                    <p>
+                        {{form.email.label}}
+                        {{form.email}}
+                    </p>
+                </div>
+
+                <div class="input-box">
+                    <p>
+                        {{form.password.label}}
+                        {{form.password}}
+                    </p>
+                </div>
+
+                    <p>
+                        {{form.remember_me.label}}
+                        {{form.remember_me}}
+                    </p>
+
+                    <p>
+                        {{form.submit}}
+                    </p>
+             
+            </div>
+        </body>
+    
+</form>
+
+<!-- {%endblock%} -->

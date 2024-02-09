@@ -1,0 +1,59 @@
+/* style.css */
+
+/* Main content */
+.main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form styling */
+  form {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 400px;
+    margin-right: -400px;
+  }
+  
+  form p {
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Optional: Style form labels */
+  form label {
+    font-weight: bold;
+  }
+  
+  /* Optional: Style form error messages */
+  form .error {
+    color: #ff0000;
+    font-size: 12px;
+  }
+  

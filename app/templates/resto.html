@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Posts </title>
+</head>
+<body> 
+	<main>
+		{% for article in article % }
+		<article>
+			<h1> {{ article.title }} </h1>
+			<h4> {{ article.title }} </h4>
+			<p> {{ article.body }} </p>
+		</article>
+		<hr>
+		{% endfor %}
+	</main> 
+{% endblock %}

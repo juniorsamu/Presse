@@ -1,0 +1,94 @@
+{%extends 'base.html'%}
+{%block main%}*
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='Style/acc.css')}}">
+
+<div id="videoBox">
+	<video id="video" src="{{url_for('static',filename='Images/vid.mp4')}}" autoplay loop muted></video>
+</div> 
+
+<!-- <video width="320" height="240" autoplay>
+    <source src="{{url_for('static',filename='Images/vid.mp4')}}" type="video/mp4">
+</video> -->
+
+
+<section id="popular-destination">
+	<h1 class="title">Les articles du moment</h1>
+	<div class="content">
+		<!-- box -->
+		<div class="box">
+			<img src="{{url_for('static',filename='Images/parf2.jpg')}}" alt="">
+			<div class="content">
+				<div>
+					<h4> Nouveauté: PARFUM</h4>
+					<p>Pur parfum de la virilité,oser rever.</p>
+					<p></p>
+					<a href="{{url_for('debut2')}}">Autres articles </a>
+				</div>
+			</div>
+		</div>
+		<!-- box -->
+		<div class="box">
+			<img src="{{url_for('static',filename='Images/moods.jpg')}}" alt="">
+			<div class="content">
+				<div>
+					<h4>VETEMENTS</h4>
+					<p> Pull en tout genre</p>
+					<p></p>
+					<a href="{{url_for('debut2')}}">Autres articles</a>
+				</div>
+			</div>
+		</div>
+		<!-- box -->
+		<div class="box">
+			<img src="{{url_for('static',filename='Images/sne1.jpg')}}" alt="">
+			<div class="content">
+				<div>
+					<h4>CHAUSSURES</h4>
+					<p>Sebsation de planner</p>
+					<p></p>
+					<a href="{{url_for('debut')}}">Autres articles</a>
+				</div>
+			</div>
+		</div>
+		<!-- box -->
+		 <div class="box">
+			<img src="{{url_for('static',filename='Images/bag.jpg')}}" alt="">
+			<div class="content">
+				<div>
+					<h4>ACCESSOIRES</h4>
+					<p>Conbine élégance et grâce</p>
+					<p></p>
+					<a href="{{url_for('debut1')}}">Autres articles</a>
+				</div>
+			</div>
+		</div>
+		<!-- box -->
+		 <div class="box">
+			<img src="{{url_for('static',filename='Images/hmm.jpg')}}" alt="">
+			<div class="content">
+				<div>
+					<h4>Nouveauté: ACCESSOIRES</h4>
+					<p> Pouquoi pas?</p>
+					<p></p>
+					<a href="{{url_for('debut1')}}">Autres articles</a>
+				</div>
+			</div>
+		</div>
+		<!-- box -->
+		 <div class="box">
+		 <img src="{{url_for('static',filename='Images/mo.jpg')}}" alt="">
+		 <div class="content">
+			 <div>
+				 <h4>ACCESSOIRES </h4>
+				 <p>Montre de luxe.Le temps à porter de mains.</p>
+				 <p></p>
+				 <a href="{{url_for('debut1')}}">Autres articles</a>
+			 </div>
+		 </div>
+	 </div>
+		<!-- box -->
+	</div>
+</section>
+
+{%endblock%}

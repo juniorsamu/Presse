@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+	{% block main %}
+	{{ super ()}}
+	<main class="main">
+
+	
+	<article class="article">
+	<img src="{{url_for('static',filename='Images/mont1.jpg')}}" class="article-img">
+	<h1 class="article-title"> Montre haute gamme</h1>
+	<h4 class="article-date"> Poster le 22/07/2023</h4>
+	<p>fait en acier inoxidable recouvert d'une couche de cuivre</p>
+	<p></p>
+	<button>Ajouter au panier</button>
+	</article>
+	<hr>
+
+	
+	<article class="article">
+	<img src="{{url_for('static',filename='Images/mont2.jpg')}}" class="article-img">
+	<h1 class="article-title">Lunettes de soleil</h1>
+	<h4 class="article-date"> Poster le 22/07/2023</h4>
+	<p>Vous procure clarté et netteté </p>
+	<p></p>
+	<button>Ajouter au panier</button>
+	</article>
+	<hr>
+	
+	</main>
+	{% endblock %}                                                                 
+ 

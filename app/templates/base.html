@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		#SOLO-sHOP
+	</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='Style/style.css')}}">
+</head>
+<body>
+	
+	<header class="header">
+		<a class="SOLO-CHOP">SOLO-sHOP</a>
+		
+			<nav class="nav">
+                <a class="active" href="{{url_for('deb')}}">Acceuil</a>
+				<a class="active" href="{{url_for('index')}}">Nouveauté</a>
+				<a class="active" href="{{url_for('debut')}}"> Chaussures </a>
+				<a class="active" href="{{url_for('debut1')}}"> Accessoires </a>
+				<a class="active" href="{{url_for('debut2')}}"> Vetements </a>
+				
+			</nav>
+			<div class="social">
+				<a class="facebook" href="index.html"><img src="{{url_for('static',filename='Images/facebook.png')}}" width="20" height="20"></a>
+				<a href="index.html"><img src="{{url_for('static',filename='Images/twitter.png')}}" width="20" height="20"></a>
+			</div>
+		
+	</header>
+	
+    {%block main%}
+    <div class="banniere"></div>
+    {%endblock%}
+
+
+	 <footer class="footer">
+		<footer class="footer">
+			<div class="row">
+			  <div class="col d-flex">
+				<h4>INFORMATION</h4>
+				<a href="">About us</a>
+				<a href="">Contact Us</a>
+				<a href="">Term & Conditions</a>
+				<a href="">Shipping Guide</a>
+			  </div>
+			  <div class="col d-flex">
+				<h4>USEFUL LINK</h4>
+				<a href="">Online Store</a>
+				<a href="">Customer Services</a>
+				<a href="">Promotion</a>
+				<a href="">Top Brands</a>
+			  </div>
+			  <div class="col d-flex">
+				<span><i class="bx bxl-facebook-square"></i></span>
+				<span><i class="bx bxl-instagram-alt"></i></span>
+				<span><i class="bx bxl-github"></i></span>
+				<span><i class="bx bxl-twitter"></i></span>
+				<span><i class="bx bxl-pinterest"></i></span>
+			  </div>
+			</div>
+		  </footer> 
+		
+	</footer> 
+
+</body>
+</html>

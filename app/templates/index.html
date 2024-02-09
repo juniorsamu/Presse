@@ -1,0 +1,21 @@
+
+	{% extends 'base.html' %}
+	{% block main %}
+	{{ super ()}}
+	<main class="main">
+		<!-- <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='Style/acc.css')}}"> -->
+	{% for article in articles %}
+	<article class="article">
+	<img src="{{url_for('static',filename='Images/'+article.image)}}" class="article-img">
+	<h1 class="article-title">{{article.titre}}</h1>
+	<h4 class="article-date">{{article.contenue}}</h4>
+	<h4 class="article-date">{{article.prix}}</h4>
+	<p>{{article.body}}</p>
+	<button>Ajouter au panier</button>
+	</article>
+	
+	<hr>
+	{% endfor %}
+	</main>
+	{% endblock %}                                                                 
+ 

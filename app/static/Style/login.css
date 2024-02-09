@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+	margin:0 ;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins",sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	min-height: 100vh;
+	background: url("../Images/int.jpg") no-repeat; 
+	background-size: cover;
+	background-position: center;
+	margin-left: -250px; 
+	margin-right: 50px;
+	/* font-size: 16px;
+	font-family: "Montserrat", sans-serif;
+	color: rgba(0, 0, 0, .87);
+	line-height: 1.8;
+	margin: 0;  */ 
+
+}
+/* .login-form {
+    width: 420px;
+    background: purple;
+    color: white;
+}     */
+.login-form  {
+	width: 63%;
+	height: 400px;
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, .2);
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+	margin: 30px 0;
+	margin-bottom: 50px;
+	margin-left: 400px;
+	margin-bottom: 100px;
+} 	
+
+.login-form h1{
+    font-size: 36px;
+	text-align: center;
+}  
+
+.login-form .input-box {
+	
+	width: 100%;
+	height: 50px;
+	/* background-color: white; */
+	margin: 30px 0;
+	
+} 	
+.input-box p {
+	width: 0%;
+	height: 0%;
+	margin-right: 100%;
+	/* background-color: white; */
+	border: none;
+	outline: none;
+	border: 2px solid rgba(255, 255, 255, .2);
+	border-radius: 40px;
+}

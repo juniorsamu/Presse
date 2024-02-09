@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+	{% block main %}
+	{{ super ()}}
+	<main class="main">
+
+	
+	<article class="article">
+	<img src="{{url_for('static',filename='Images/cuire1.jpg')}}" class="article-img">
+	<h1 class="article-title"> Chaussure en cuir</h1>
+	<h4 class="article-date"> Poster le 22/07/2023</h4>
+	<p>Le cuir à été traité avec soin pour une  </p>
+	<p></p>
+	<button>Ajouter au panier</button>
+	</article>
+	<hr>
+
+	
+	<article class="article">
+	<img src="{{url_for('static',filename='Images/cuire2.jpg')}}" class="article-img">
+	<h1 class="article-title"> Chaussure</h1>
+	<h4 class="article-date"> Poster le 22/07/2023</h4>
+	<p> Fait avec la peau de python</p>
+	<p></p>
+	<button>Ajouter au panier</button>
+	</article>
+	<hr>
+	
+	</main>
+	{% endblock %}                                                                 
+ 
